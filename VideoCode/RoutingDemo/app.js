@@ -8,7 +8,9 @@ const userRoutes = require("./userRoutes")
 const app = express();
 
 app.use(express.json());
-// app.use(middleware.logger)
+
+app.use(middleware.logger)
+
 app.use(morgan('dev'))
 
 
